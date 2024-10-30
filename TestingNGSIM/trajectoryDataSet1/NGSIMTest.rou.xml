@@ -1,0 +1,13 @@
+<routes>
+         <vType id="auto" accel="5" decel="4.5" length="5" minGap="1" maxSpeed="20" guiShape="passenger" color="1,0,0"/>
+         <vType id="human" accel="5" decel="4.5"  length="5" minGap="1" maxSpeed="20" guiShape="passenger" color="0,0,1"/>
+         <route id="right" edges="AB"/>
+<vehicle id="0" type="auto" route="right" depart="0" departSpeed="10" departLane="0" departPos="4.32" />
+<vehicle id="1" type="human" route="right" depart="0" departSpeed="10" departLane="0" departPos="4.32" />
+<vehicle id="2" type="human" route="right" depart="0" departSpeed="10" departLane="1" departPos="5" />
+<vehicle id="3" type="human" route="right" depart="0" departSpeed="10" departLane="2" departPos="4" />
+<vehicle id="4" type="human" route="right" depart="0" departSpeed="10" departLane="3" departPos="7" />
+<vehicle id="5" type="human" route="right" depart="0" departSpeed="10" departLane="0" departPos="5.5" />
+<vehicle id="6" type="human" route="right" depart="0" departSpeed="10" departLane="2" departPos="4.2" />
+<vehicle id="7" type="human" route="right" depart="0" departSpeed="10" departLane="3" departPos="6" />
+</routes>

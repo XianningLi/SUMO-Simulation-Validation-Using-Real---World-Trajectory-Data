@@ -1,0 +1,12 @@
+<routes>
+         <vType id="auto" accel="5" decel="4.5" length="5" minGap="1" maxSpeed="20" guiShape="passenger" color="1,0,0"/>
+         <vType id="human" accel="5" decel="4.5"  length="5" minGap="1" maxSpeed="20" guiShape="passenger" color="0,0,1"/>
+         <vType id="human1" accel="5" decel="4.5"  length="5" minGap="1" maxSpeed="20" guiShape="passenger" color="0,1,0"/>
+         <vType id="leader" accel="5" decel="4.5"  length="5" minGap="1" maxSpeed="30" guiShape="passenger" color="0,1,0"/>
+         <route id="right" edges="AB BC"/>
+<vehicle id="LT" type="leader" route="right" depart="0" departSpeed="12" departLane="2" departPos="72.5" />
+<vehicle id="FT" type="human1" route="right" depart="0" departSpeed="12" departLane="2" departPos="27.5" />
+<vehicle id="LC" type="leader" route="right" depart="0" departSpeed="12" departLane="1" departPos="77.5" />
+<vehicle id="AV" type="auto" route="right" depart="0" departSpeed="12" departLane="1" departPos="36" />
+<vehicle id="FC" type="human1" route="right" depart="0" departSpeed="12" departLane="1" departPos="13.5" />
+</routes>

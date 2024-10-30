@@ -1,0 +1,23 @@
+<routes>
+         <vType id="auto" accel="5" decel="4.5" length="5" minGap="1" maxSpeed="20" guiShape="passenger" color="1,0,0"/>
+         <vType id="human" accel="5" decel="4.5"  length="5" minGap="1" maxSpeed="20" guiShape="passenger" color="0,0,1"/>
+         <vType id="human1" accel="5" decel="4.5"  length="5" minGap="1" maxSpeed="20" guiShape="passenger" color="1,1,1"/>
+         <vType id="human2" accel="5" decel="4.5"  length="5" minGap="1" maxSpeed="20" guiShape="passenger" color="0,1,0"/>
+         <vType id="leader" accel="5" decel="4.5"  length="5" minGap="1" maxSpeed="20" guiShape="passenger" color="black"/>
+         <route id="right" edges="AB BC"/>
+<vehicle id="LT" type="human1" route="right" depart="0" departSpeed="20" departLane="2" departPos="257.5" />
+<vehicle id="FT" type="human1" route="right" depart="0" departSpeed="20" departLane="2" departPos="207.5" />
+<vehicle id="LC" type="human1" route="right" depart="0" departSpeed="20" departLane="1" departPos="262.5" />
+<vehicle id="AV" type="auto" route="right" depart="0" departSpeed="12" departLane="1" departPos="40" />
+<vehicle id="FC" type="human1" route="right" depart="0" departSpeed="12" departLane="1" departPos="13.5" />
+<vehicle id="1" type="human2" route="right" depart="0" departSpeed="20" departLane="2" departPos="208" />
+<vehicle id="2" type="human2" route="right" depart="0" departSpeed="20" departLane="2" departPos="206" />
+<vehicle id="3" type="human2" route="right" depart="0" departSpeed="20" departLane="2" departPos="204" />
+<vehicle id="4" type="human2" route="right" depart="0" departSpeed="20" departLane="2" departPos="202" />
+<vehicle id="5" type="human2" route="right" depart="0" departSpeed="20" departLane="2" departPos="200" />
+<vehicle id="6" type="human2" route="right" depart="0" departSpeed="20" departLane="2" departPos="198" />
+<vehicle id="7" type="human2" route="right" depart="0" departSpeed="20" departLane="2" departPos="196" />
+<vehicle id="8" type="human2" route="right" depart="0" departSpeed="20" departLane="2" departPos="194" />
+<vehicle id="9" type="human2" route="right" depart="0" departSpeed="20" departLane="2" departPos="192" />
+<vehicle id="10" type="human2" route="right" depart="0" departSpeed="20" departLane="2" departPos="190" />
+</routes>

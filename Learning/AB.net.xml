@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 8/1/2018 2:04:45 PM by Netedit Version 0.32.0
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="G:\My%20Drive\PhD%20Study\Research\Sumo\073103\AB_test.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="G:\My%20Drive\PhD%20Study\Research\Sumo\073103\AB.net.xml"/>
+    </output>
+
+    <processing>
+        <no-turnarounds value="true"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+        <junctions.corner-detail value="0"/>
+        <rectangular-lane-cut value="false"/>
+        <walkingareas value="false"/>
+    </processing>
+
+</configuration>
+-->
+
+<net version="0.27" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="0.00,0.00" convBoundary="0.00,250.00,3010.00,250.00" origBoundary="-10000000000.00,-10000000000.00,10000000000.00,10000000000.00" projParameter="!"/>
+
+    <edge id=":B_0" function="internal">
+        <lane id=":B_0_0" index="0" speed="20.00" length="0.10" shape="3000.00,241.75 3000.00,241.75"/>
+        <lane id=":B_0_1" index="1" speed="20.00" length="0.10" shape="3000.00,245.05 3000.00,245.05"/>
+        <lane id=":B_0_2" index="2" speed="20.00" length="0.10" shape="3000.00,248.35 3000.00,248.35"/>
+    </edge>
+
+    <edge id="AB" from="A" to="B" priority="1" length="3000.00">
+        <lane id="AB_0" index="0" speed="20.00" length="3000.00" shape="0.00,241.75 3000.00,241.75"/>
+        <lane id="AB_1" index="1" speed="20.00" length="3000.00" shape="0.00,245.05 3000.00,245.05"/>
+        <lane id="AB_2" index="2" speed="20.00" length="3000.00" shape="0.00,248.35 3000.00,248.35"/>
+    </edge>
+    <edge id="BC" from="B" to="C" priority="1">
+        <lane id="BC_0" index="0" speed="20.00" length="10.00" shape="3000.00,241.75 3010.00,241.75"/>
+        <lane id="BC_1" index="1" speed="20.00" length="10.00" shape="3000.00,245.05 3010.00,245.05"/>
+        <lane id="BC_2" index="2" speed="20.00" length="10.00" shape="3000.00,248.35 3010.00,248.35"/>
+    </edge>
+
+    <junction id="A" type="dead_end" x="0.00" y="250.00" incLanes="" intLanes="" shape="0.00,249.95 0.00,240.15"/>
+    <junction id="B" type="priority" x="3000.00" y="250.00" incLanes="AB_0 AB_1 AB_2" intLanes=":B_0_0 :B_0_1 :B_0_2" shape="3000.00,249.95 3000.00,240.15 3000.00,249.95">
+        <request index="0" response="000" foes="000" cont="0"/>
+        <request index="1" response="000" foes="000" cont="0"/>
+        <request index="2" response="000" foes="000" cont="0"/>
+    </junction>
+    <junction id="C" type="dead_end" x="3010.00" y="250.00" incLanes="BC_0 BC_1 BC_2" intLanes="" shape="3010.00,240.15 3010.00,249.95"/>
+
+    <connection from="AB" to="BC" fromLane="0" toLane="0" via=":B_0_0" dir="s" state="M"/>
+    <connection from="AB" to="BC" fromLane="1" toLane="1" via=":B_0_1" dir="s" state="M"/>
+    <connection from="AB" to="BC" fromLane="2" toLane="2" via=":B_0_2" dir="s" state="M"/>
+
+    <connection from=":B_0" to="BC" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":B_0" to="BC" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":B_0" to="BC" fromLane="2" toLane="2" dir="s" state="M"/>
+
+</net>
